@@ -19,7 +19,7 @@ const submithandler=(e)=>{
   setError("");
   e.preventDefault();
  //http://www.omdbapi.com/?i=${search}&apikey=5cf1dafc
-   axios.get(``)
+   axios.get(`https://www.omdbapi.com/?s=${MOVIE_NAME}&apikey=5cf1dafc`)
    .then((res)=>
    setData(res.data))
 .catch((error)=>
