@@ -18,8 +18,8 @@ const [MOVIE_NAME,setMOVIE_NAME]=useState("");
 const submithandler=(e)=>{
   setError("");
   e.preventDefault();
- //http://www.omdbapi.com/?i=${search}&apikey=5cf1dafc
-   axios.get(`https://www.omdbapi.com/?s=${MOVIE_NAME}&apikey=5cf1dafc`)
+ //http://www.omdbapi.com/?i=${search}&apikey=
+   axios.get(`https://www.omdbapi.com/?s=${MOVIE_NAME}&apikey=`)
    .then((res)=>
    setData(res.data))
 .catch((error)=>
